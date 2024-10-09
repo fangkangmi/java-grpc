@@ -1,6 +1,6 @@
 payment/PaymentServiceGrpc.class
-com/example/App.class
 payment/PaymentServiceGrpc$PaymentServiceMethodDescriptorSupplier.class
+com/payment/PaymentService.class
 payment/Payment$PaymentRequestOrBuilder.class
 payment/PaymentServiceGrpc$PaymentServiceBaseDescriptorSupplier.class
 payment/Payment$PaymentStatusRequest.class
