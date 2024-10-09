@@ -1,0 +1,3 @@
+/home/fang/workspace/java-grpc/payment-service/src/main/java/com/example/App.java
+/home/fang/workspace/java-grpc/payment-service/target/generated-sources/protobuf/grpc-java/payment/PaymentServiceGrpc.java
+/home/fang/workspace/java-grpc/payment-service/target/generated-sources/protobuf/java/payment/Payment.java
