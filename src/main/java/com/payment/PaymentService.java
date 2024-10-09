@@ -2,6 +2,7 @@ package com.payment;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
+import io.grpc.protobuf.services.ProtoReflectionService;
 import io.grpc.stub.StreamObserver;
 import payment.Payment.PaymentRequest;
 import payment.Payment.PaymentResponse;
@@ -43,6 +44,7 @@ public class PaymentService extends PaymentServiceGrpc.PaymentServiceImplBase {
     public static void main(String[] args) throws IOException, InterruptedException {
         Server server = ServerBuilder.forPort(50051)
                 .addService(new PaymentService())
+                .addService(ProtoReflectionService.newInstance()) // Enable reflection
                 .build()
                 .start();
         System.out.println("Server started, listening on " + server.getPort());
