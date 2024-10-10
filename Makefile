@@ -16,3 +16,6 @@ test:
 	"Payment for order #1234", "recipientId": "recipient123" \
 	}' \
 	localhost:50051 payment.PaymentService/MakePayment
+
+gradlew_build:
+	./gradlew build
